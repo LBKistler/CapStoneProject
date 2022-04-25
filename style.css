@@ -1,5 +1,5 @@
 /*============GOOGLE FONTS===============*/
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 
 
@@ -15,6 +15,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    font-family: 'Montserrat',sans-serif;
 }
 nav{
     display: flex;
@@ -29,6 +30,8 @@ nav img{
 .nav-links{
     flex: 1;
     text-align: right;
+    top: -50px;
+    transition: top 0.3s;
 }
 
 .nav-links ul li{
@@ -55,7 +58,7 @@ nav img{
     width: 100%;
 }
 /*===========HOME================*/
-.text-box{
+.home-text-box{
     width: 90%;
     color: #fff;
     position: absolute;
@@ -63,12 +66,94 @@ nav img{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    font-family: 'Montserrat',sans-serif;
 }
-.text-box h1{
+.home-text-box h1{
     font-size: 62px;
+    font-family: 'Montserrat',sans-serif;
 }
-.text-box p{
+.home-text-box p{
     margin: 10px 0 40px;
     font-size: 20px;
     color: #fff;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/*===========PAYMENT RESOURCES========*/
+.payment-resources{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Montserrat',sans-serif;
+}
+.payment-resources h1{
+    font-size: 62px;
+    color:#6eb3eb;
+    font-family: 'Montserrat',sans-serif;
+}
+/*===========FREE RESOURCES========*/
+.free-resources{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url();
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Montserrat',sans-serif;
+    
+}
+.free-resources h1{
+    font-size: 62px;
+    color:#6eb3eb;
+    font-family: 'Montserrat',sans-serif;
+}
+.image{
+    position: absolute;
+    width: 300px;
+    display: grid;
+}
+.edx--img{
+    display: grid;
+    width: 100%;
+}
+
+img.rounded-corners{
+    border-radius: 30px;
+}
+.image--overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 30px;
+}
+.image--title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.image--overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.image--overlay:hover{
+    opacity: 1;
+}
+.image--overlay:hover > *{
+    transform: translateY(0);
+}
+.image--description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
 }
